@@ -1,0 +1,430 @@
+/*	==========================================================================
+	Typography
+	========================================================================== */
+/* classes
+---------------- */
+/* line 15, ../sass/typography.scss */
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 107%;
+  font-family: "Droid Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.563;
+}
+
+/* line 22, ../sass/typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Droid Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.25;
+}
+
+/* line 28, ../sass/typography.scss */
+h1, h2 {
+  font-size: 25.008px;
+  font-size: 1.563rem;
+}
+
+/* line 31, ../sass/typography.scss */
+h3 {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+/* line 34, ../sass/typography.scss */
+h4 {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+/* line 39, ../sass/typography.scss */
+p {
+  margin-bottom: 1.563em;
+}
+
+/* line 42, ../sass/typography.scss */
+ul, ol {
+  margin: 0 0 1.563em 3.052em;
+}
+
+/* line 45, ../sass/typography.scss */
+ul {
+  list-style: disc;
+}
+
+/* line 48, ../sass/typography.scss */
+ol {
+  list-style: decimal;
+}
+
+/* line 52, ../sass/typography.scss */
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: 1.563em;
+}
+
+/* line 56, ../sass/typography.scss */
+dt {
+  font-weight: bold;
+}
+
+/* line 59, ../sass/typography.scss */
+dd {
+  margin: 0 1.563em 1.563em;
+}
+
+/* line 62, ../sass/typography.scss */
+b, strong {
+  font-weight: bold;
+}
+
+/* line 65, ../sass/typography.scss */
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+/* line 68, ../sass/typography.scss */
+blockquote {
+  margin: 0 1.563em;
+}
+
+/* line 71, ../sass/typography.scss */
+address {
+  margin: 0 0 1.563em;
+}
+
+/* line 74, ../sass/typography.scss */
+pre {
+  overflow: auto;
+  max-width: 100%;
+}
+
+/* line 80, ../sass/typography.scss */
+abbr, acronym {
+  cursor: text;
+}
+
+/* line 83, ../sass/typography.scss */
+mark, ins {
+  text-decoration: none;
+}
+
+/* line 87, ../sass/typography.scss */
+sup,
+sub {
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 93, ../sass/typography.scss */
+sup {
+  bottom: 1ex;
+}
+
+/* line 96, ../sass/typography.scss */
+sub {
+  top: .5ex;
+}
+
+/* line 99, ../sass/typography.scss */
+small {
+  font-size: 75%;
+}
+
+/* line 102, ../sass/typography.scss */
+big {
+  font-size: 125%;
+}
+
+/* line 105, ../sass/typography.scss */
+table {
+  margin: 0 0 1.563em;
+  width: 100%;
+}
+
+/* line 109, ../sass/typography.scss */
+th {
+  font-weight: 700;
+}
+
+/* line 115, ../sass/typography.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* Corrects font size not being inherited in all browsers */
+  margin: 0;
+  /* Addresses margins set differently in IE6/7, F3/4, S5, Chrome */
+  vertical-align: baseline;
+  /* Improves appearance and consistency in all browsers */
+  *vertical-align: middle;
+  /* Improves appearance and consistency in all browsers */
+}
+
+/* line 122, ../sass/typography.scss */
+button,
+input {
+  line-height: normal;
+  /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
+}
+
+/* line 128, ../sass/typography.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  border: 1px solid #cccccc;
+  border-color: #cccccc #cccccc #bbbbbb #cccccc;
+  border-radius: 3px;
+  background: #e6e6e6;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  /* Improves usability and consistency of cursor style between image-type 'input' and others */
+  -webkit-appearance: button;
+  /* Corrects inability to style clickable 'input' types in iOS */
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.6em 1em 0.4em;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* line 146, ../sass/typography.scss */
+button:hover,
+html input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: #cccccc #bbbbbb #aaaaaa #bbbbbb;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+}
+
+/* line 157, ../sass/typography.scss */
+button:focus,
+html input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+button:active,
+html input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  border-color: #aaaaaa #bbbbbb #bbbbbb #bbbbbb;
+  box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* line 162, ../sass/typography.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* Addresses box sizing set to content-box in IE8/9 */
+  padding: 0;
+  /* Addresses excess padding in IE8/9 */
+}
+
+/* line 166, ../sass/typography.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* Addresses appearance set to searchfield in S5, Chrome */
+  -webkit-box-sizing: content-box;
+  /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* line 172, ../sass/typography.scss */
+input[type="search"]::-webkit-search-decoration {
+  /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+  -webkit-appearance: none;
+}
+
+/* line 176, ../sass/typography.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+  border: 0;
+  padding: 0;
+}
+
+/* line 184, ../sass/typography.scss */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"],
+textarea {
+  color: #666;
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+}
+
+/* line 193, ../sass/typography.scss */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus {
+  color: #111;
+}
+
+/* line 199, ../sass/typography.scss */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"] {
+  padding: 3px;
+}
+
+/* line 202, ../sass/typography.scss */
+textarea {
+  overflow: auto;
+  /* Removes default vertical scrollbar in IE6/7/8/9 */
+  padding-left: 3px;
+  vertical-align: top;
+  /* Improves readability and alignment in all browsers */
+  width: 98%;
+}
+
+/* classes
+---------------- */
+/* line 212, ../sass/typography.scss */
+.u-Masthead__siteName {
+  font-family: "Droid Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+  line-height: .21;
+  font-size: 25.008px;
+  font-size: 1.563rem;
+}
+
+/* line 221, ../sass/typography.scss */
+.u-Masthead__siteDescription,
+.legal {
+  font-family: "Droid Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+}
+
+/* line 228, ../sass/typography.scss */
+.legal {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 233, ../sass/typography.scss */
+.u-pageTitle {
+  line-height: 1.188;
+}
+
+/* line 237, ../sass/typography.scss */
+.u-PostsList {
+  list-style: none;
+}
+
+/*  Icons  */
+/* line 243, ../sass/typography.scss */
+#u-Masthead:before {
+  font-size: 39.056px;
+  font-size: 2.441rem;
+}
+
+/* line 251, ../sass/typography.scss */
+.u-VCard--person__url:before,
+.u-VCard--person__item--socialTwitter:before,
+.u-VCard--person__item--socialRdio:before,
+.u-VCard--person__item--socialSoundCloud:before,
+.u-VCard--person__item--socialGitHub:before {
+  font-size: 31.248px;
+  font-size: 1.953rem;
+}
+
+/*  Menu  */
+/* line 257, ../sass/typography.scss */
+.ac-NavAnchor {
+  font-family: "Droid Serif", serif;
+  /*font-family: 'Ideal Sans A', 'Ideal Sans B' sans-serif;*/
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
+/* line 265, ../sass/typography.scss */
+.u-NavSite {
+  font-family: "Droid Serif", serif;
+  /*font-family: 'Ideal Sans A', 'Ideal Sans B' sans-serif;*/
+  font-weight: 700;
+  font-style: normal;
+  font-size: 31.248px;
+  font-size: 1.953rem;
+}
+
+/* line 273, ../sass/typography.scss */
+.u-NavSite__level {
+  list-style: none;
+}
+
+/*  Figure  */
+/* line 282, ../sass/typography.scss */
+.u-Figure__caption,
+.u-asideContent--categories,
+.u-pageLink--external,
+.u-pageDate {
+  font-family: "Droid Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+}
+
+/* line 289, ../sass/typography.scss */
+.u-pageLink--external {
+  font-size: 13.328px;
+  font-size: 0.833rem;
+}
+
+/* line 293, ../sass/typography.scss */
+.u-asideContent--categories {
+  text-transform: capitalize;
+}
+
+/*	VCard  */
+/* line 300, ../sass/typography.scss */
+.u-VCard--person__item,
+.u-VCard--person__url {
+  font-family: "Droid Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12.8px;
+  font-size: 0.8rem;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 310, ../sass/typography.scss */
+.u-VCard--person__item--locality:after {
+  content: ",";
+}
+
+/*	Navigation
+	========================================================================== */
+@media screen and (min-width: 38em) {
+  /*  Menu  */
+  /* line 322, ../sass/typography.scss */
+  .u-NavSite,
+  .u-asideTitle {
+    font-size: 20px;
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,162 @@
+/* Fonts */
+$lora: 'Lora', serif;
+$slackey: 'Slackey', cursive;
+
+$fontWeightNormal: 400;
+$fontWeightBold: 700;
+
+/* Colors */
+$darkPurple: #3C174D;
+$mediumPurple: #603B71;
+$lightPurple: #9D8BA6;
+$salmon: #F27166;
+$mediumOrange: #F2A75C;
+
+/* Utilities */
+@mixin link-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+  color: $normal;
+  @if $visited {
+    &:visited {
+      color: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      color: $focus;
+    }
+  }
+  @if $hover {
+    &:hover {
+      color: $hover;
+    }
+  }
+  @if $active {
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+@mixin v-pixel-fallback ( $property, $rems, $keyword: null, $vertical-radius: false, $important: false ) {
+
+	@if $important {
+		$important : ' !important';
+	}
+	@else {
+		$important : '';
+	}
+	
+	@if $property == 'border-radius' {
+		@include border-radius(rem-to-pixel($rems));
+		@include border-radius($rems);
+	}
+	
+	@elseif $property == 'font-size' {
+		
+		@if $keyword { 
+			#{$property}: $keyword#{$important}; 
+		}
+		@else { 
+			#{$property}: rem-to-pixel($rems, $keyword)#{$important};
+		}
+	
+		#{$property}: #{$rems}#{$important};
+	
+	}
+	
+	@else {
+		#{$property}: rem-to-pixel($rems)#{$important};
+		#{$property}: #{$rems}#{$important};
+	}
+	
+	
+}
+
+@function calculate-pixels ( $rems ) {
+	
+	@if type-of($rems) != 'number' {
+
+		// If there is more than one value, create a list and perform equations on each value
+		
+		// Create an empty list that we can dump values into
+		$values: ();
+	
+		@each $value in $rems {
+			$values: append($values, pixels($value) );
+		}
+	
+		// Return the property and its list of converted values
+		@return $values;
+		
+	}
+	@else {
+		@return pixels($rems);
+	}
+	
+}
+
+@function rem-to-pixel ( $rems, $keyword: null ) {
+	
+	@if $keyword { 
+		@return $keyword 
+	}
+	@else { 
+		@return calculate-pixels($rems);
+	}
+
+}
+
+@function pixels ( $rems ) {
+	
+	$base-font-multiplier : 1;
+	@if type-of($rems) != 'number' {
+		@return $rems;
+	}
+	@else {
+		@if $rems == 0 { 
+			@return 0;
+		}
+		@elseif unit($rems) == 'rem' {
+			@return strip-units($rems) * $base-font-multiplier * 16px
+		}
+		@else {
+			@return $rems;
+		}
+	}
+	
+}
+
+@function strip-units($number) {
+	
+	@if type-of($number) != 'number' {
+		@return $number;
+	}
+	@else {
+		@return $number / ($number * 0 + 1);
+	}
+	
+}
+
+@mixin link-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+  color: $normal;
+  @if $visited {
+    &:visited {
+      color: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      color: $focus;
+    }
+  }
+  @if $hover {
+    &:hover {
+      color: $hover;
+    }
+  }
+  @if $active {
+    &:active {
+      color: $active;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+@import "imports";
+@import "compass";
+
+/*--------------------------------------------------------------
+Links
+--------------------------------------------------------------*/
+a {
+	color: royalblue;
+}
+a:visited {
+	color: purple;
+}
+a:hover,
+a:focus,
+a:active {
+	color: midnightblue;
+}
+
+/*--------------------------------------------------------------
+Text elements
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+  color: $darkPurple;
+}
+
+/*--------------------------------------------------------------
+Classes
+--------------------------------------------------------------*/
+.main-navigation {
+	background-color:	$salmon;
+	a {
+		color: $darkPurple;
+	}
+}

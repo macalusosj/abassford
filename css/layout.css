@@ -1,0 +1,322 @@
+/*	==========================================================================
+	Layout
+	========================================================================== */
+@media screen {
+  /* html elements
+  ---------------- */
+  /* line 12, ../sass/layout.scss */
+  * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  /* Embeds and iframes fit their containers */
+  /* line 21, ../sass/layout.scss */
+  embed,
+  iframe,
+  object {
+    max-width: 100%;
+  }
+
+  /* Images fit their containers */
+  /* line 26, ../sass/layout.scss */
+  img {
+    height: auto;
+    max-width: 100%;
+  }
+
+  /* line 31, ../sass/layout.scss */
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+
+  /* line 36, ../sass/layout.scss */
+  body {
+    position: relative;
+  }
+
+  /* line 40, ../sass/layout.scss */
+  h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .41em;
+  }
+
+  /* line 47, ../sass/layout.scss */
+  hr:after {
+    display: inline-block;
+    position: relative;
+    top: -0.8em;
+    padding: 0 0.25em;
+  }
+
+  /* classes
+  ---------------- */
+  /* line 57, ../sass/layout.scss */
+  .u-lHeader {
+    padding: 1.953em 0 1.563em;
+  }
+
+  /* line 61, ../sass/layout.scss */
+  #u-Masthead:before {
+    position: absolute;
+  }
+
+  /* line 65, ../sass/layout.scss */
+  .u-Masthead {
+    padding-bottom: 1.563em;
+  }
+
+  /* line 69, ../sass/layout.scss */
+  .u-Masthead__siteName {
+    margin-left: 1.953em;
+    padding-top: .328em;
+  }
+
+  /* line 74, ../sass/layout.scss */
+  .u-Masthead__siteDescription {
+    margin-left: 3.815em;
+  }
+
+  /* line 81, ../sass/layout.scss */
+  .u-PostsList {
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 1.563em;
+  }
+
+  /* line 87, ../sass/layout.scss */
+  .u-PostsList__itemContainer {
+    /*float: left;
+    padding-right: 3%;
+    width: 33%;*/
+  }
+
+  /* line 93, ../sass/layout.scss */
+  .u-pageTitle--above {
+    margin-top: -.107em;
+  }
+
+  /* line 97, ../sass/layout.scss */
+  .u-pageTitle--below {
+    margin-bottom: 0;
+  }
+
+  /* line 101, ../sass/layout.scss */
+  .u-asideTitle {
+    margin: 0;
+  }
+
+  /* line 105, ../sass/layout.scss */
+  .u-pageDate {
+    margin: 0 0 1.953em;
+  }
+
+  /* line 109, ../sass/layout.scss */
+  .u-lFooter {
+    padding: 0.512em 0 1.953em;
+    position: relative;
+  }
+
+  /*  Menu  */
+  /* line 116, ../sass/layout.scss */
+  .ac-NavAnchor {
+    padding: 0.107em 0.41em;
+  }
+
+  /* line 121, ../sass/layout.scss */
+  .ac-NavAnchor--menu,
+  .ac-NavAnchor--top {
+    position: absolute;
+    right: 5%;
+  }
+
+  /* line 126, ../sass/layout.scss */
+  .ac-NavAnchor--menu {
+    top: 1.563em;
+  }
+
+  /* line 130, ../sass/layout.scss */
+  .ac-NavAnchor--top {
+    top: 0;
+  }
+
+  /* line 134, ../sass/layout.scss */
+  .u-NavSite {
+    position: relative;
+  }
+  /* line 136, ../sass/layout.scss */
+  .u-NavSite li a {
+    display: block;
+    text-decoration: none;
+  }
+  /* line 140, ../sass/layout.scss */
+  .u-NavSite ul {
+    margin: 0;
+    padding-left: 0;
+  }
+
+  /* line 146, ../sass/layout.scss */
+  .u-NavSite li {
+    /* bem up these list items */
+    float: none;
+  }
+
+  /* line 150, ../sass/layout.scss */
+  .u-NavSite {
+    margin-top: 1.563em;
+    margin-bottom: 1.563em;
+    padding-top: 1.953em;
+  }
+
+  /*  Figure  */
+  /* line 158, ../sass/layout.scss */
+  .u-Figure {
+    margin: 0 0 1.563em 0;
+  }
+
+  /* line 165, ../sass/layout.scss */
+  .bio .u-Figure__image {
+    border-radius: 15em;
+  }
+
+  /* line 173, ../sass/layout.scss */
+  .u-Figure--left {
+    float: left;
+    margin: 0 1.563em 1.563em 0;
+  }
+
+  /* line 178, ../sass/layout.scss */
+  .u-Figure--right {
+    float: right;
+    margin: 0 0 1.563em 1.563em;
+  }
+
+  /* line 183, ../sass/layout.scss */
+  .u-Figure--third {
+    width: 33%;
+  }
+
+  /* line 190, ../sass/layout.scss */
+  .u-lHeader,
+  .u-lFooter,
+  .u-lMain,
+  .u-NavSite {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  /* line 195, ../sass/layout.scss */
+  .u-lAside {
+    padding-top: 1.563em;
+  }
+
+  /*  vCard  */
+  /* line 201, ../sass/layout.scss */
+  .u-VCard--person {
+    padding-top: 1.563em;
+    padding-bottom: .64em;
+    margin-bottom: .8em;
+    position: relative;
+  }
+
+  /* line 208, ../sass/layout.scss */
+  .u-VCard--person__url:before {
+    position: absolute;
+    top: 1.188em;
+  }
+
+  /* line 214, ../sass/layout.scss */
+  .u-VCard--person__fn,
+  .u-VCard--person__title {
+    display: inline-block;
+  }
+
+  /* line 219, ../sass/layout.scss */
+  .u-VCard--person__item--givenName,
+  .u-VCard--person__adr {
+    margin-left: 39.056px;
+    margin-left: 2.441rem;
+  }
+
+  /* line 223, ../sass/layout.scss */
+  .u-VCard--person__adr {
+    margin-top: -8.192px;
+    margin-top: -0.512rem;
+  }
+
+  /* line 227, ../sass/layout.scss */
+  .u-VCard--person__info {
+    list-style: none;
+    margin: 0.8em 0 0 0;
+    padding: 0;
+  }
+
+  /* line 233, ../sass/layout.scss */
+  .u-VCard--person__itemContainer {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 38em) {
+  /* menu and top icon */
+  /* line 243, ../sass/layout.scss */
+  .ac-NavAnchor--menu,
+  .u-NavSite .ac-NavAnchor--top {
+    display: none;
+  }
+
+  /* line 248, ../sass/layout.scss */
+  .u-lHeader,
+  .u-lFooter {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
+
+  /* line 253, ../sass/layout.scss */
+  .u-lMain {
+    float: right;
+    padding-left: 0;
+    padding-right: 12.5%;
+    width: 80%;
+  }
+
+  /* line 260, ../sass/layout.scss */
+  .u-lContent {
+    float: left;
+    padding-right: 7.451%;
+    padding-left: 7.451%;
+    width: 80%;
+  }
+
+  /* line 267, ../sass/layout.scss */
+  .u-lAside {
+    float: right;
+    width: 20%;
+    padding-top: 0;
+  }
+
+  /* line 274, ../sass/layout.scss */
+  .u-lFooter {
+    clear: both;
+  }
+
+  /* line 278, ../sass/layout.scss */
+  .u-VCard--person__info {
+    margin: 0 0 0 0;
+    right: 0;
+    bottom: .512em;
+    position: absolute;
+  }
+
+  /* Menu
+  ------- */
+  /* line 288, ../sass/layout.scss */
+  .u-NavSite {
+    float: left;
+    width: 20%;
+    margin-top: -.107em;
+    padding-left: 12.5%;
+    padding-right: 0;
+    padding-top: 0;
+  }
+}

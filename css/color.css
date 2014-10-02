@@ -1,0 +1,145 @@
+/*	==========================================================================
+	Color
+	========================================================================== */
+/* html elements
+---------------- */
+/* line 18, ../sass/color.scss */
+a {
+  /*link-colors($normal, $hover, $active, $visited, $focus)*/
+  color: #0b5394;
+  -webkit-transition: all 0.23s ease-in-out;
+  -moz-transition: all 0.23s ease-in-out;
+  -o-transition: all 0.23s ease-in-out;
+  transition: all 0.23s ease-in-out;
+}
+/* line 18, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:visited {
+  color: #0b5394;
+}
+/* line 21, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:focus {
+  color: #9fc5e8;
+}
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:hover {
+  color: #6fa8dc;
+}
+/* line 27, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+a:active {
+  color: #9fc5e8;
+}
+
+/* line 29, ../sass/color.scss */
+html,
+body,
+button,
+input,
+select,
+textarea {
+  color: #474747;
+}
+
+/* classes
+---------------- */
+/* line 36, ../sass/color.scss */
+#u-Masthead {
+  text-decoration: none;
+}
+
+/* line 40, ../sass/color.scss */
+.ac-NavAnchor {
+  background: #0b5394;
+  text-decoration: none;
+}
+
+/* line 51, ../sass/color.scss */
+.ac-NavAnchor--menu,
+.ac-NavAnchor--top,
+.u-VCard--person__item--socialTwitter,
+.u-VCard--person__item--socialRdio,
+.u-VCard--person__item--socialSoundCloud,
+.u-VCard--person__item--socialGitHub,
+.u-VCard--person__url {
+  /*link-colors($normal, $hover, $active, $visited, $focus)*/
+  color: white;
+  -webkit-border-radius: 3px 3px;
+  -moz-border-radius: 3px / 3px;
+  border-radius: 3px / 3px;
+}
+/* line 18, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.ac-NavAnchor--menu:visited,
+.ac-NavAnchor--top:visited,
+.u-VCard--person__item--socialTwitter:visited,
+.u-VCard--person__item--socialRdio:visited,
+.u-VCard--person__item--socialSoundCloud:visited,
+.u-VCard--person__item--socialGitHub:visited,
+.u-VCard--person__url:visited {
+  color: white;
+}
+/* line 21, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.ac-NavAnchor--menu:focus,
+.ac-NavAnchor--top:focus,
+.u-VCard--person__item--socialTwitter:focus,
+.u-VCard--person__item--socialRdio:focus,
+.u-VCard--person__item--socialSoundCloud:focus,
+.u-VCard--person__item--socialGitHub:focus,
+.u-VCard--person__url:focus {
+  color: #9fc5e8;
+}
+/* line 24, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.ac-NavAnchor--menu:hover,
+.ac-NavAnchor--top:hover,
+.u-VCard--person__item--socialTwitter:hover,
+.u-VCard--person__item--socialRdio:hover,
+.u-VCard--person__item--socialSoundCloud:hover,
+.u-VCard--person__item--socialGitHub:hover,
+.u-VCard--person__url:hover {
+  color: #6fa8dc;
+}
+/* line 27, ../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/links/_link-colors.scss */
+.ac-NavAnchor--menu:active,
+.ac-NavAnchor--top:active,
+.u-VCard--person__item--socialTwitter:active,
+.u-VCard--person__item--socialRdio:active,
+.u-VCard--person__item--socialSoundCloud:active,
+.u-VCard--person__item--socialGitHub:active,
+.u-VCard--person__url:active {
+  color: #9fc5e8;
+}
+
+/* line 58, ../sass/color.scss */
+.u-lContent,
+.u-lAside {
+  border-bottom: 0.09em solid #cccccc;
+}
+
+/*  Figure  */
+/* line 64, ../sass/color.scss */
+.u-Figure__image {
+  border: 0.09em solid #cccccc;
+}
+
+/* line 68, ../sass/color.scss */
+.u-Masthead {
+  border-bottom: 0.09em solid #cccccc;
+}
+
+/* line 72, ../sass/color.scss */
+.u-lFooter {
+  /*background: $blue00;
+  color: white*/
+}
+
+/* line 77, ../sass/color.scss */
+.u-VCard {
+  border-top: 0.09em solid #cccccc;
+  /*border-bottom: .09em solid white;*/
+}
+
+@media screen and (min-width: 38em) {
+  /* line 85, ../sass/color.scss */
+  .u-lContent,
+  .u-lAside {
+    border-bottom: 0px;
+  }
+}
