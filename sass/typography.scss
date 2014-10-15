@@ -18,13 +18,31 @@ input,
 select,
 textarea {
 	font-family: $lora;
-	@include v-pixel-fallback ('font-size', .911rem);
+	@include v-pixel-fallback ('font-size', 1rem);
 	line-height: 1.563;
 	font-weight: $fontWeightNormal;
 }
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-family: $slackey;
+}
+h1 {
+	@include v-pixel-fallback ('font-size', 1.778rem);
+}
+h2 {
+	@include v-pixel-fallback ('font-size', 1.563rem);
+}
+h3 {
+	@include v-pixel-fallback ('font-size', 1.423rem);
+}
+h4 {
+	@include v-pixel-fallback ('font-size', 1.25rem);
+}
+h5 {
+	@include v-pixel-fallback ('font-size', 1.138rem);
+}
+h6 {
+	@include v-pixel-fallback ('font-size', 1rem);
 }
 p {
 	margin-bottom: 1.5em;
@@ -87,8 +105,3 @@ big {
 /*--------------------------------------------------------------
 Classes
 --------------------------------------------------------------*/
-.menu,
-.skip-link,
-.ac-NavAnchor {
-	font-family: $slackey;
-}

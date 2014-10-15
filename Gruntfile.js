@@ -134,9 +134,9 @@ module.exports = function(grunt) {
           // pngcrush: true,
 
           // CSS filenames
-          // datasvgcss: "icons.data.svg.css",
-          // datapngcss: "icons.data.png.css",
-          // urlpngcss: "icons.fallback.css",
+          datasvgcss: "grunticon-data-svg.scss",
+          datapngcss: "grunticon-data-png.scss",
+          urlpngcss: "grunticon-fallback.scss",
 
           // preview HTML filename
           // previewhtml: "preview.html",
@@ -145,10 +145,10 @@ module.exports = function(grunt) {
           // loadersnippet: "grunticon.loader.js",
 
           // folder name (within dest) for png output
-          // pngfolder: "png",
+          pngfolder: "../images",
 
           // prefix for CSS classnames
-          cssprefix: ".icon",
+          cssprefix: ".",
 
           // defaultWidth: "32px",
           // defaultHeight: "32px",

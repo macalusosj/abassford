@@ -2,8 +2,68 @@
 @import "compass";
 
 /*--------------------------------------------------------------
-4.0 Forms
+Forms
 --------------------------------------------------------------*/
+
+/* Typography */
+
+input[type="search"] {
+	font-family: $slackey;
+	@include v-pixel-fallback ('font-size', 1.563rem);
+}
+input[type="search"]:focus {
+	font-family: $lora;
+	@include v-pixel-fallback ('font-size', 1rem);
+}
+
+/* Layout */
+
+@media screen {
+
+	.widget_search .search-submit,
+ 	.widget_search .widget-title,
+	.search-submit	{
+		display: none;
+	}
+	.search-form {
+		position: absolute;
+		@include v-pixel-fallback ('top', .99rem);
+		@include v-pixel-fallback ('left', 1.563rem);
+	}
+	input[type="search"] {
+		width: 60%;
+	}
+	input[type="search"]:focus {
+		width: 100%;	
+	}
+
+}
+
+/* Color */
+
+input[type="search"] {
+	color: $lightPurple;
+	border: none;
+	background-color: transparent;
+	transition: all .23s ease-in-out;
+}
+input[type="search"]:focus {
+	color: $darkPurple;
+	border: 1px solid $salmon;
+	background-color: #fff;
+}
+::-webkit-input-placeholder {
+	color: $salmon;
+}
+:-moz-placeholder { /* Firefox 18- */
+	color: $salmon;  
+}
+::-moz-placeholder {  /* Firefox 19+ */
+	color: $salmon;  
+}
+:-ms-input-placeholder {  
+	color: $salmon;  
+}
 button,
 input,
 select,
@@ -71,19 +131,17 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"],
 textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	color: $lightPurple;
+	border: 1px solid $salmon;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
 input[type="password"]:focus,
-input[type="search"]:focus,
 textarea:focus {
-	color: #111;
+	color: $darkPurple;
+	border: 1px solid $salmon;
 }
 input[type="text"],
 input[type="email"],
@@ -98,3 +156,5 @@ textarea {
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 98%;
 }
+
+

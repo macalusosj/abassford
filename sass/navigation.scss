@@ -5,22 +5,83 @@
 Navigation
 --------------------------------------------------------------*/
 
+/* Typography */
+
+
+.main-navigation {
+	a {
+		text-decoration: none;
+	}
+	ul {
+		li {
+			@include v-pixel-fallback ('font-size', 1.25rem);
+		}
+	}
+	ul ul {
+		li {
+			line-height: 1;
+			@include v-pixel-fallback ('font-size', .8rem);
+		}
+	}
+}
+.menu,
+.skip-link,
+.ac-NavAnchor {
+	font-family: $slackey;
+}
+.menu-toggle,
+.ac-NavAnchor--top{
+	@include v-pixel-fallback ('font-size', 1.563rem);
+	line-height: 1;
+}
+
+@media screen and (min-width: $large) {
+
+	.main-navigation {
+		ul {
+			li {
+				@include v-pixel-fallback ('font-size', .911rem);
+			}
+		}
+		ul ul {
+			li a {
+				@include v-pixel-fallback ('font-size', .728rem);
+			}
+		}
+	}
+
+}
+
+/* Layout */
+
 @media screen {
 
 	.main-navigation {
 		display: block;
 		width: 100%;
+		padding: 5%;
+		ul {
+			list-style: none;
+			margin: 0;
+			padding-left: 0;
+		}
+		li a {
+			display: block;
+			@include v-pixel-fallback ('padding', .5rem);
+		}
+		ul ul li a {
+			@include v-pixel-fallback ('padding-left', 1.953rem);
+		}
 	}
-	.main-navigation ul {
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
+	.menu-toggle,
+	.main-navigation.toggled .nav-menu {
+		display: block;
+	}	
+	.menu-toggle {
+		position: absolute;
+		@include v-pixel-fallback ('top', 1.563rem);
+		@include v-pixel-fallback ('right', 1.563rem);
 	}
-
-	.main-navigation a {
-		text-decoration: none;
-	}
-
 	.site-main .comment-navigation,
 	.site-main .paging-navigation,
 	.site-main .post-navigation {
@@ -41,71 +102,79 @@ Navigation
 		width: 50%;
 	}
 
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
-	
-	.menu-toggle {
-		position: absolute;
-		top: 1em;
-		right: 1em;
-	}
-
 }
 
-@media screen and (min-width: 35em) {
+@media screen and (min-width: $large) {
+
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu,
  	.ac-NavAnchor--top	{
 		display: none;
 	}
-
-	.main-navigation {
-		position: absolute;
-		top: 6em;
-	}
 	.menu >	ul {
-			width: 60em;
+			width: 52em;
 			margin: 0 auto;
 	}
-	/* Small menu */
-	.menu-toggle {
-		cursor: pointer;
-	}
-	.main-navigation li {
-		float: left;
-		position: relative;
-		padding: .5em;
+	.main-navigation {
+		padding: 0;
+		position: absolute;
+		top: 28.2em;
+		li {
+			float: left;
+			position: relative;
+		}
+		ul li:hover > ul {
+			display: block;
+		}
+		ul ul {
+			display: none;
+			float: left;
+			left: 0;
+			@include v-pixel-fallback ('padding', .5rem);
+			position: absolute;
+			top: 2.65em;
+			z-index: 99999;
+			li a {
+				@include v-pixel-fallback ('padding-left', .5rem);
+			}
+		}
 	}
 
-	.main-navigation ul ul {
-		display: none;
-		float: left;
-		left: 0;
-		position: absolute;
-		top: 1.5em;
-		z-index: 99999;
+}
+
+/* Color */
+
+.ac-NavAnchor {
+	@include link-colors($salmon, #fff, #fff, $salmon, #fff);
+}
+.ac-NavAnchor--top {
+	@include link-colors($darkPurple, #fff, #fff, $darkPurple, #fff);
+}
+.main-navigation {
+	background:	$salmon;
+ 	a {
+		@include link-colors($darkPurple, #fff, #fff, $darkPurple, #fff);
+		border-bottom: none;
+		box-shadow: none;
 	}
-	.main-navigation ul ul ul {
-		left: 100%;
-		top: 0;
+	.current_page_item a,
+	.current-menu-item a {
+		@include link-colors(#fff, $darkPurple, $darkPurple, #fff, $darkPurple);
 	}
-	.main-navigation ul ul a {
-		width: 200px;
+	ul ul {
+		a {
+			@include link-colors($mediumPurple, #fff, #fff, $mediumPurple, #fff);
+		}
 	}
-	.main-navigation ul ul li {
-	}
-	.main-navigation li:hover > a {
-	}
-	.main-navigation ul ul :hover > a {
-	}
-	.main-navigation ul ul a:hover {
-	}
-	.main-navigation ul li:hover > ul {
-		display: block;
-	}
-	.main-navigation .current_page_item a,
-	.main-navigation .current-menu-item a {
+}
+
+@media screen and (min-width: $large) {
+	.main-navigation {
+		ul ul {
+			a {
+				@include link-colors($salmon, #fff, #fff, $salmon, #fff);
+			}
+			background: $mediumPurple;
+		}
 	}
 }

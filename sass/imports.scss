@@ -12,6 +12,12 @@ $lightPurple: #9D8BA6;
 $salmon: #F27166;
 $mediumOrange: #F2A75C;
 
+/* Breakpoints */
+
+$small: 29.375em;
+$medium: 40em; 
+$large: 53em;
+
 /* Utilities */
 @mixin link-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
   color: $normal;
