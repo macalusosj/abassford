@@ -29,10 +29,22 @@ Navigation
 .ac-NavAnchor {
 	font-family: $slackey;
 }
-.menu-toggle,
-.ac-NavAnchor--top{
+.ac-NavAnchor--top {
 	@include v-pixel-fallback ('font-size', 1.563rem);
 	line-height: 1;
+}
+.menu-toggle {
+	@include v-pixel-fallback ('font-size', 1rem);
+	line-height: 1;
+}
+
+@media screen and (min-width: $small) {
+
+	.menu-toggle {
+		@include v-pixel-fallback ('font-size', 1.563rem);
+		line-height: 1;
+	}
+
 }
 
 @media screen and (min-width: $large) {
@@ -56,10 +68,13 @@ Navigation
 
 @media screen {
 
+	.ac-NavAnchor--top {
+		padding: 7%;
+		display: block;
+	}
 	.main-navigation {
 		display: block;
 		width: 100%;
-		padding: 5%;
 		ul {
 			list-style: none;
 			margin: 0;
@@ -71,7 +86,11 @@ Navigation
 		}
 		ul ul li a {
 			@include v-pixel-fallback ('padding-left', 1.953rem);
+			@include v-pixel-fallback ('padding-bottom', .953rem);
 		}
+	}
+	.menu {
+		padding: 5%;
 	}
 	.menu-toggle,
 	.main-navigation.toggled .nav-menu {
@@ -111,6 +130,11 @@ Navigation
  	.ac-NavAnchor--top	{
 		display: none;
 	}
+	.menu {
+		padding: 0;
+		width: 100%;
+		display: inline-block;
+	}
 	.menu >	ul {
 			width: 52em;
 			margin: 0 auto;
@@ -136,7 +160,11 @@ Navigation
 			z-index: 99999;
 			li a {
 				@include v-pixel-fallback ('padding-left', .5rem);
+				@include v-pixel-fallback ('padding-bottom', .5rem);
 			}
+		}
+		ul ul ul {
+			@include v-pixel-fallback ('top', 1.5rem);
 		}
 	}
 
@@ -147,11 +175,10 @@ Navigation
 .ac-NavAnchor {
 	@include link-colors($salmon, #fff, #fff, $salmon, #fff);
 }
-.ac-NavAnchor--top {
-	@include link-colors($darkPurple, #fff, #fff, $darkPurple, #fff);
+.ac-NavAnchor--top b {
+	@include link-colors($salmon, $darkPurple, $darkPurple, $salmon, $mediumPurple);
 }
 .main-navigation {
-	background:	$salmon;
  	a {
 		@include link-colors($darkPurple, #fff, #fff, $darkPurple, #fff);
 		border-bottom: none;
@@ -162,10 +189,13 @@ Navigation
 		@include link-colors(#fff, $darkPurple, $darkPurple, #fff, $darkPurple);
 	}
 	ul ul {
-		a {
-			@include link-colors($mediumPurple, #fff, #fff, $mediumPurple, #fff);
-		}
 	}
+}
+.menu {
+	background: $salmon;
+}
+.menu > ul > li {
+	border-bottom: 1px dotted $mediumPurple;
 }
 
 @media screen and (min-width: $large) {
@@ -176,5 +206,8 @@ Navigation
 			}
 			background: $mediumPurple;
 		}
+	}
+	.menu > ul > li {
+		border-bottom: none;
 	}
 }

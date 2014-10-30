@@ -1,1 +1,6 @@
-@media screen and (min-width: $large) {
+	.icon-facebook {
+		height: 1.563em;
+		width: 1.563em;
+		display: block;
+		background-size: cover;
+	}

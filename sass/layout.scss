@@ -17,10 +17,10 @@ Elements
 		margin: 0 0 1.5em 3em;
 	}
 	ul {
-		list-style: disc;
+		list-style: none;
 	}
 	ol {
-		list-style: decimal;
+		list-style: none;
 	}
 	li > ul,
 	li > ol {
@@ -51,7 +51,7 @@ Elements
 	/*--------------------------------------------------------------
 	Alignments
 	--------------------------------------------------------------*/
-	.alignleft {
+	/*.alignleft {
 		display: inline;
 		float: left;
 		margin-right: 1.5em;
@@ -65,12 +65,12 @@ Elements
 		clear: both;
 		display: block;
 		margin: 0 auto;
-	}
+	}*/
 
 	/*--------------------------------------------------------------
 	Clearings
 	--------------------------------------------------------------*/
-	.clear:before,
+	/*.clear:before,
 	.clear:after,
 	.entry-content:before,
 	.entry-content:after,
@@ -93,15 +93,15 @@ Elements
 	.site-content:after,
 	.site-footer:after {
 		clear: both;
-	}
+	}*/
 
 	/*--------------------------------------------------------------
 	Widgets
 	--------------------------------------------------------------*/
-	.widget {
-		margin: 0 0 1.5em;
+ 	.widget {
+		padding: 5%;
+		margin-bottom: 1em;
 	}
-
 	/* Make sure select elements fit in widgets */
 	.widget select {
 		max-width: 100%;
@@ -126,7 +126,10 @@ Elements
 	.page-content,
 	.entry-content,
 	.entry-summary {
-		margin: 1.5em 0 0;
+		margin: 0 0 1.5em;
+	}
+	.entry-content {
+		position:relative;
 	}
 	.page-links {
 		clear: both;
@@ -154,14 +157,14 @@ Elements
 	Infinite scroll
 	--------------------------------------------------------------*/
 	/* Globally hidden elements when Infinite Scroll is supported and in use. */
-	.infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
-	.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
-		display: none;
+	/*.infinite-scroll .paging-navigation, /* Older / Newer Posts Navigation (always hidden) */
+	/*.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+		/*display: none;
 	}
 	/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before */
-	.infinity-end.neverending .site-footer {
+	/*.infinity-end.neverending .site-footer {
 		display: block;
-	}
+	}/*
 
 	/*--------------------------------------------------------------
 	Media
@@ -214,6 +217,44 @@ Elements
 	object {
 		max-width: 100%;
 	}
+	html {
+		position: relative;
+	}
+
+	/*	Main content */
+
+	.content-area {
+		padding: 5%;
+	}
+	.quotes {
+		margin: 0 0 1.563em;
+		width: 100%;
+	}
+	.mugshot {
+		height: 12.5em;
+		margin: 0 auto 1em;
+		width: 14.8em;
+		background-size: cover;
+	}
+	.icon-facebook {
+		background-size: cover;
+		bottom: 1.563em;
+		display: block;
+		height: 1.423em;
+		position: absolute;
+		right: 1.563em;
+		width: 1.423em;
+	}
+	.widget-area {
+		ul {
+			margin: 0;
+			padding: 0;
+			li a {
+				display: block;
+				padding-bottom: .512em;
+			}
+		}
+	}
 
 	/* Header and footer */
 
@@ -224,22 +265,17 @@ Elements
 	}
 	.site-header {
 		height: 16.563em;
-		background-size:cover;
+		background-size: cover;
 		background-position: center center;
+		padding-top: 4em;
+		position: relative;
 	}
 	.site-branding {
-		height: 10.6em;
-		margin: 3.982em 0 1.982em;
+		background-size: contain;
 		background-position: center center;
+		height: 10.5em;
 	}
 	.site-footer {
-		padding: 5%;
-	}
-
-	/*	Main content */
-
-	.content-area,
- 	.widget-area {
 		padding: 5%;
 	}
 
@@ -251,8 +287,23 @@ Elements
 		height: 22.738em;
 	}
 	.site-branding {
-		height: 14.552em;
-		margin: 5.093em 0 3.093em;
+		height: 16em;
+	}
+	.icon-facebook {
+		height: 1.563em;
+		width: 1.563em;
+	}
+	.quotes {
+		clear: left;
+		float: left;
+		margin: 0 1.563em 1.563em 0;
+		width: 14.8em;
+	}
+	.mugshot {
+		float: left;
+		height: 9em;
+		margin: 0 1.563em 1em 0;
+		width: 11.5em;
 	}
 
 }
@@ -261,10 +312,10 @@ Elements
 	
 	.site-header {
 		height: 28.25em;
+		padding-top: 3em;
 	}
 	.site-branding {
-		height: 20.686em;
-		margin: 3.781em 0;
+		height: 22em;
 	}
 
 }
@@ -273,12 +324,12 @@ Elements
 
 	.site-footer {
 		padding: 1.25em 0;
-	}
+	}	
 
 	/*	Main content */
 
 	.content-area,
- 	.widget,
+ 	.widget-area,
 	.site-info	{
 		margin: 1.25em auto;
 		padding: 0;
@@ -287,8 +338,23 @@ Elements
 	.content-area {
 		padding-top: 3.815em;
 	}
- 	.widget-area {
-		padding: 1.25em 0;
+
+
+}
+
+@media screen and (min-width: 75em) { 
+
+	.quotes {
+		position: absolute;
+		top: 0em;
+		right: -12.75em;
+		width: 9em;
+	}
+	.mugshot {
+		position: absolute;
+		top: 0em;
+		left: -11em;
+		width: 9em;
 	}
 
 }

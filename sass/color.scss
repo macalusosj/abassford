@@ -7,8 +7,7 @@ Links
 a {
 	/*link-colors($normal, $hover, $active, $visited, $focus)*/
   @include link-colors($darkPurple, $salmon, $salmon, $darkPurple, $salmon);
-	border-bottom: 1px solid tint($salmon, 65%);
-	box-shadow: inset 0 -3px 0 tint($salmon, 65%);
+	border-bottom: .3em solid tint($salmon, 65%);
 	text-decoration: none;
 	transition: all .23s ease-in-out;
 }
@@ -22,17 +21,44 @@ select,
 textarea {
   color: $darkPurple;
 }
+h2, h3, h4, h5, h6 {
+	color: $salmon;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	border-bottom: none;
+}
 
 /*--------------------------------------------------------------
 Classes
 --------------------------------------------------------------*/
 
-@media screen {
-	
-	.site-header {
-		border-bottom: .64em solid $salmon;
+.site-header {
+	background: $darkPurple url(../images/site-header.png) no-repeat center center;
+	background-size: cover;
+	border-bottom: .64em solid $salmon;
+}
+.site-footer {
+	background: $darkPurple;
+	color: #fff;
+	a {
+		border-bottom: none;
+		@include link-colors(#fff, $salmon, $salmon, #fff, $salmon);
 	}
-
+}
+.mugshot,
+.quotes,
+.quotes h4 {
+	color: $lightPurple;
+}
+.mugshot {
+	background: url(../images/andy-mug.jpg)	no-repeat;
+	background-size: contain;
+}
+.widget {
+	background-color: tint($lightPurple, 80%);
+}
+.icon-facebook {
+	border-bottom: none;
 }
 
 @media screen and (min-width: $large) {

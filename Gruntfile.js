@@ -209,14 +209,6 @@ module.exports = function(grunt) {
         }
       },
 
-      jekyll: {
-        files: ['*.html', '*.markdown', '_posts/*.markdown', '_layouts/*.html', '_includes/*.html', 'sass/*.scss', 'css/*.css', 'images/*.{png,jpg,gif}', 'js/**/*.js'],
-        tasks: ['jekyll:prod'],
-        options: {
-          spawn: false,
-        }
-      }
-
     },
     
   });

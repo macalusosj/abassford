@@ -25,21 +25,25 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
 	clear: both;
 	font-family: $slackey;
+	line-height: 1.138;
+	margin-bottom: .328em;
 }
 h1 {
 	@include v-pixel-fallback ('font-size', 1.778rem);
 }
-h2 {
-	@include v-pixel-fallback ('font-size', 1.563rem);
+h2,
+.widget-title {
+	@include v-pixel-fallback ('font-size', 1.423rem);
+	margin-bottom: 1em;
 }
 h3 {
-	@include v-pixel-fallback ('font-size', 1.423rem);
-}
-h4 {
 	@include v-pixel-fallback ('font-size', 1.25rem);
 }
-h5 {
+h4 {
 	@include v-pixel-fallback ('font-size', 1.138rem);
+}
+h5 {
+	@include v-pixel-fallback ('font-size', 1rem);
 }
 h6 {
 	@include v-pixel-fallback ('font-size', 1rem);
@@ -105,3 +109,36 @@ big {
 /*--------------------------------------------------------------
 Classes
 --------------------------------------------------------------*/
+
+.site-info {
+	text-align: center;
+}
+.home .entry-content {
+	li {
+		list-style: none;
+		margin-bottom: 1em;
+	}
+}
+.quotes { 
+	font-size: .8em;
+	h4 {
+		margin-bottom: .298em;	
+	}
+}
+.widget-area ul li a {
+	border-bottom: none;
+}
+.entry-meta {
+	margin-bottom: 1.5em;
+}
+.entry-title {
+	margin-bottom: 1em;
+}
+
+@media screen and (min-width: $medium) {
+
+	.entry-content {
+		font-size: 110%;
+	}
+
+}
