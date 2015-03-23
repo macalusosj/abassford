@@ -47,7 +47,14 @@ Elements
 	th {
 		font-weight: bold;
 	}
-
+	td {
+		a img {
+			float: left;
+			padding-right: 1em;
+		}
+		padding: 1em 1em 1em 0;
+	}
+	
 	/*--------------------------------------------------------------
 	Alignments
 	--------------------------------------------------------------*/

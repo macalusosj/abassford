@@ -10,10 +10,6 @@
 
 	</div><!-- #content -->
 
-	<div id="search-3">
-		<?php get_search_form(); ?>
-	</div>
-
 	<div class="main-navigation">
 		<nav id="site-navigation" role="navigation">
 			<a class="ac-NavAnchor ac-NavAnchor--top" href="#top"><b class="u-lVisuallyHidden">top</b></a>

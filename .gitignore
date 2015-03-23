@@ -51,3 +51,5 @@ design-files/
 node_modules/
 concatenated/
 prefixed/
+.codekit
+scratch.txt

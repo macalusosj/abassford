@@ -1,6 +1,16 @@
-	.icon-facebook {
-		height: 1.563em;
-		width: 1.563em;
-		display: block;
-		background-size: cover;
-	}
+.site-branding {
+	background: transparent url("../images/site-header-ie8.png") no-repeat center center;  
+	background-repeat: no-repeat;
+}
+.main-navigation li a {
+	padding-left: 5px;
+}
+.search-submit { 
+	background: url("../images/search-submit-ie8.png") no-repeat center center; 
+}
+.icon-facebook {
+	background: url("../images/icon-facebook-ie8.png") no-repeat center center;
+}
+.mugshot {
+	background: url("../images/andy-mug-ie8.jpg") no-repeat center center;
+}
