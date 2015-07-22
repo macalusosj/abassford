@@ -11,11 +11,19 @@ input[type="search"] {
 	font-family: $slackey;
 	@include v-pixel-fallback ('font-size', 1rem);
 }
-input[type="submit"] {
+#search-3 input[type="submit"] {
 	@include v-pixel-fallback ('font-size', 1rem);
 	line-height: 1;
 }
-
+input#fscf_submit1 {
+    padding: .5em 1em;
+    font-family: $slackey;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+#fscf_submit_div1 {
+    padding-top: 1em !important;
+}
 /* Layout */
 
 @media screen {
@@ -38,7 +46,7 @@ input[type="submit"] {
 		float: left;
 		width: 5.5em;
 	}
-	input[type="submit"] {
+	#search-3 input[type="submit"] {
 		cursor: pointer; /* Improves usability and consistency of cursor style between image-type 'input' and others */
 		-webkit-appearance: button; /* Corrects inability to style clickable 'input' types in iOS */
 		padding: .3em;
@@ -84,7 +92,7 @@ input[type="search"]:focus {
 :-ms-input-placeholder {  
 	color: $salmon;  
 }
-input[type="submit"] {
+#search-3 input[type="submit"] {
 	border: none;
 	color: transparent;
 	background-color: transparent;
@@ -177,5 +185,17 @@ textarea {
 	vertical-align: top; /* Improves readability and alignment in all browsers */
 	width: 98%;
 }
-
-
+input#fscf_submit1 {
+    background-color: $darkPurple;
+    border: none;
+    border-radius: .2em;
+    color: $salmon;
+}
+input#fscf_submit1:hover,
+input#fscf_submit1:focus {
+    background-color: $mediumPurple;
+}
+input#fscf_submit1:active {
+    background-color: $lightPurple;
+    color: $darkPurple
+}

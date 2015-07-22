@@ -53,3 +53,5 @@ concatenated/
 prefixed/
 .codekit
 scratch.txt
+
+*.swp
