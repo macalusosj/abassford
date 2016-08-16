@@ -28,10 +28,10 @@ input#fscf_submit1 {
 
 @media screen {
 
- 	/*.widget_search .widget-title,
-	.search-submit	{
-		display: none;
-	}*/
+    .widget-area .search-form {
+        display: none;
+        visibility: hidden;
+    }
 	.search-form {
 		position: absolute;
 		@include v-pixel-fallback ('top', .99rem);

@@ -113,11 +113,22 @@ Classes
 .site-info {
 	text-align: center;
 }
-.home .entry-content {
+.entry-content {
+    ul {
+        list-style: disc;
+    }
+    ul ul {
+        list-style: circle;
+    }
 	li {
-		list-style: none;
 		margin-bottom: 1em;
 	}
+    ul ul,
+    ol ol,
+    ul ol,
+    ol ul {
+        margin: 1em 0 1em 1.5em
+    }
 }
 .quotes { 
 	font-size: .8em;
