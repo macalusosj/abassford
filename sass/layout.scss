@@ -243,14 +243,18 @@ Elements
 		width: 14.8em;
 		background-size: cover;
 	}
-	.icon-facebook {
+	.icon-facebook,
+	.icon-instagram {
 		background-size: cover;
-		bottom: 1.563em;
+		bottom: .563em;
 		display: block;
 		height: 1.423em;
 		position: absolute;
 		right: 1.563em;
 		width: 1.423em;
+	}
+	.icon-instagram {
+		right: 3.563em;
 	}
 	.widget-area {
 		ul {
@@ -296,7 +300,8 @@ Elements
 	.site-branding {
 		height: 16em;
 	}
-	.icon-facebook {
+	.icon-facebook,
+	.icon-instagram {
 		height: 1.563em;
 		width: 1.563em;
 	}
