@@ -41,6 +41,7 @@ grunticon(["<?php echo get_template_directory_uri(); ?>/css/style-svg.minified.c
 			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'andy-bassford' ); ?></a>
 			<a class="ac-NavAnchor" href="#site-navigation"><b class="menu-toggle"><?php _e( 'Menu', 'andy-bassford' ); ?></b></a>
 			<a class="icon-facebook" href="https://www.facebook.com/andy.bassford"><b class="screen-reader-text">Facebook</b></a>
+			<a class="icon-instagram" href="https://www.instagram.com/andybassford/"><b class="screen-reader-text">Instagram</b></a>
 
 		</header>
 	</div><!-- #masthead -->

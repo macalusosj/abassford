@@ -46,9 +46,7 @@ ai-cache/
 min/
 *.sublime-project
 *.sublime-workspace
-design-files/
 *.rb
-node_modules/
 concatenated/
 prefixed/
 .codekit
