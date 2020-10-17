@@ -1,1 +1,0 @@
-Final design tweaks, wrap HTML 5 tags in divs, browser testing and fixes, IE8 stylesheet 

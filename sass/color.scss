@@ -1,5 +1,5 @@
 @import "imports";
-@import "compass";
+/* @import "compass"; */
 
 /*--------------------------------------------------------------
 Links
@@ -7,7 +7,7 @@ Links
 a {
 	/*link-colors($normal, $hover, $active, $visited, $focus)*/
   @include link-colors($darkPurple, $salmon, $salmon, $darkPurple, $salmon);
-	border-bottom: .3em solid tint($salmon, 65%);
+	border-bottom: .3em solid $lightSalmon;
 	text-decoration: none;
 	transition: all .23s ease-in-out;
 }
@@ -58,7 +58,7 @@ Classes
 	background-size: contain;
 }
 .widget {
-	background-color: tint($lightPurple, 80%);
+	background-color: $lightLightPurple;
 }
 .icon-facebook,
 .icon-instagram {

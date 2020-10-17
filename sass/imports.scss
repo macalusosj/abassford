@@ -9,7 +9,9 @@ $fontWeightBold: 700;
 $darkPurple: #3C174D;
 $mediumPurple: #603B71;
 $lightPurple: #9D8BA6;
+$lightLightPurple: #ebe7ed;
 $salmon: #F27166;
+$lightSalmon: #facdc9;
 $mediumOrange: #F2A75C;
 
 /* Breakpoints */
@@ -57,7 +59,7 @@ $large: 53em;
 		@include border-radius($rems);
 	}
 	
-	@elseif $property == 'font-size' {
+	@else if $property == 'font-size' {
 		
 		@if $keyword { 
 			#{$property}: $keyword#{$important}; 
@@ -122,7 +124,7 @@ $large: 53em;
 		@if $rems == 0 { 
 			@return 0;
 		}
-		@elseif unit($rems) == 'rem' {
+		@else if unit($rems) == 'rem' {
 			@return strip-units($rems) * $base-font-multiplier * 16px
 		}
 		@else {
@@ -141,28 +143,4 @@ $large: 53em;
 		@return $number / ($number * 0 + 1);
 	}
 	
-}
-
-@mixin link-colors($normal, $hover: false, $active: false, $visited: false, $focus: false) {
-  color: $normal;
-  @if $visited {
-    &:visited {
-      color: $visited;
-    }
-  }
-  @if $focus {
-    &:focus {
-      color: $focus;
-    }
-  }
-  @if $hover {
-    &:hover {
-      color: $hover;
-    }
-  }
-  @if $active {
-    &:active {
-      color: $active;
-    }
-  }
 }

@@ -53,3 +53,5 @@ prefixed/
 scratch.txt
 
 *.swp
+*.css
+*.codekit3
